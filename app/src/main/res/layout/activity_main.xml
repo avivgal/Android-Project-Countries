@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/order_by_name"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="Order By Name" />
+    <Button
+        android:id="@+id/order_by_area"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="Order By Area"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/black"
+        android:text="Countys:"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:context="table_demo.coderzheaven.com.tabledemo.MainActivity">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0,1" />
+
+    </ScrollView>
+
+</LinearLayout>
